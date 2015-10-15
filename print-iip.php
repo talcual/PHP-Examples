@@ -19,7 +19,7 @@ try {
 	$ipp->setPrinterURI("/printers/HP_LaserJet_Professional_M1212nf_MFP");
     $ipp->setAttribute('media','A4'); // very little pages
 	$ipp->setAttribute("cpi",18);
-	$ipp->setData("10000030352-CLIENTE.pdf"); // Path to file.
+	$ipp->setData("filename.pdf"); // Path to file.
 	$ipp->printJob('laPrueba');   
 } catch (Exception $e) {
 	echo $e;
